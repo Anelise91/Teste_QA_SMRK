@@ -69,7 +69,7 @@ Seleção do produto posicionando sobre cabeçalho
 ```
 
 
-## ✒️ Autores
+## ✒️ Autora
 
 <a href="https://www.linkedin.com/in/anelisemaia/">
  <img style="border-radius: 50%;" width="100" src="https://media-exp1.licdn.com/dms/image/C4E03AQGofb04oZKdXQ/profile-displayphoto-shrink_200_200/0/1517396707158?e=1620259200&amp;v=beta&amp;t=MoDP_VJolys8KI6Fb5hzW8KC6ZjFcnZpN5O4lR_u3iE" height="100" alt="Editar foto" id="ember408" class="profile-photo-edit__preview ember-view">
