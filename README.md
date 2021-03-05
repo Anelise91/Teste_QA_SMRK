@@ -1,4 +1,4 @@
-# Teste_QA_SMRK
+# Projeto_QA_Anelise
 
 Criação de um teste automatizado com fluxo de ponta a ponta para o Desafio QA Jr Smarkio. Foi escolhido o site da loja Magazine Luiza para simular a escolha de um produto (Smart Tv) e sua validação no carrinho de compras em um cenário e seus fluxos alternativos. 
 
