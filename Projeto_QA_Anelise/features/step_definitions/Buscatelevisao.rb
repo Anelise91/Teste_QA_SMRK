@@ -8,14 +8,24 @@ Quando("busco pela {string}") do |smart|
 end
 
 Quando("escolho o modelo na lista") do
-  smart_tv = find("h1 > strong")
+  smart_tv = find("[title='smart tv']")
   expect(smart_tv.text).to eql "smart tv"
 
-  find(".middle-search .product:nth-child(1)").click
+  find("li.sc-gpsBpD.fgfZdo:nth-child(1)").click
 end
 
 Então("adiciono à sacola e valido o produto") do
   find(".button__text").click
+
+  @produto = page.find(".BasketItemProduct-quantity-dropdown").value
+  expect(page).to have_link(@produto, between: 1..10)
+
+  click_on "Continuar"
+end
+
+Então("adiciono à sacola e valido meu produto") do
+  find(".button__text").click
+
   click_on "continuar"
 
   @produto = page.find(".BasketItemProduct-quantity-dropdown").value
