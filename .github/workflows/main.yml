@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   deploy-dev:
     # The type of runner that the job will run on
-    runs-on: windows-10
+    runs-on: windows-latest
     environment: 
       name: dev
       url: 'https://www.magazineluiza.com.br/'
