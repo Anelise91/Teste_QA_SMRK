@@ -34,4 +34,4 @@ jobs:
         ${{ runner.os }}-gems-
     - run: gem install bundler
     - run: bundle config path vendor/bundle
-    - run: cucumber
+    - run: bundle install
