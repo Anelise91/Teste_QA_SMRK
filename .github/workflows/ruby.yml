@@ -34,4 +34,3 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       
     - run: bundle exec cucumber
-      if: ./vendor/bundle
