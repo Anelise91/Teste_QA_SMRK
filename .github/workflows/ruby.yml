@@ -34,7 +34,6 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
    
     - uses: actions/run@v1
-    - name: Run testes
       with:
          working-directory: ./vendor/bundle
          run: bundle exec cucumber
