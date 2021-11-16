@@ -33,6 +33,5 @@ jobs:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       
-    - name: Cucumber  
     - run: bundle exec cucumber ./vendor/bundle
   
