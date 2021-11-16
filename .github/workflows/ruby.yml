@@ -32,5 +32,8 @@ jobs:
         working-directory: /home/runner/work/Teste_QA_SMRK/Teste_QA_SMRK/Projeto_QA_Anelise/
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - name: Run testes   
-      run: bundle exec cucumber
+    - name: Run testes
+     
+      with:
+         working-directory: ./vendor/bundle
+         run: bundle exec cucumber
