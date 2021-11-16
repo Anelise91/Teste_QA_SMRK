@@ -34,4 +34,15 @@ jobs:
         ${{ runner.os }}-gems-
     - run: gem install bundler
     - run: bundle config path vendor/bundle
-    - run: bundle install
+    
+    - name: publish gem
+    - run: |
+        mkdir -p $HOME/.gem
+        touch $HOME/.gem/credentials
+        chmod 0600 $HOME/.gem/credentials
+        printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+        gem build *.gemspec
+        gem push *.gem
+    - run: Bundle Install
+    - run: bundle exec cucumber
+
