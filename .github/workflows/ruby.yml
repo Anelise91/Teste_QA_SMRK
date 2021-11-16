@@ -31,6 +31,7 @@ jobs:
       with:
         working-directory: /home/runner/work/Teste_QA_SMRK/Teste_QA_SMRK
         ruby-version: ${{ matrix.ruby-version }}
-        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+        bundler-cache: false # runs 'bundle install' and caches installed gems automatically
+        
     - name: Run tests
       run: bundle install
