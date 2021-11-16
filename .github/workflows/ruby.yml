@@ -37,3 +37,4 @@ jobs:
         cd Projeto_QA_Anelise/   
         gem list
         bundle exec cucumber
+        
