@@ -27,7 +27,7 @@ jobs:
 
       - uses: actions/cache@v2
         with:
-          working-directory: /home/runner/work/Teste_QA_SMRK/Teste_QA_SMRK
+          path: /home/runner/work/Teste_QA_SMRK/Teste_QA_SMRK
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
