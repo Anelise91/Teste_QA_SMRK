@@ -25,11 +25,8 @@ jobs:
         ruby-version: 2.7
         # runs 'bundle install' and caches installed gems automatically
         bundler-cache: true
-        run: |
-          gem install bundler
-          bundle config working-directory /home/runner/work/Teste_QA_SMRK/Teste_QA_SMRK/
-          bundle install --jobs 4 --retry 3
-     
+        working-directory: /home/runner/work/Teste_QA_SMRK/Teste_QA_SMRK/
+
     - run: bundle exec cucumber
         
 
