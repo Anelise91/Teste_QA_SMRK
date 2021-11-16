@@ -32,5 +32,10 @@ jobs:
         working-directory: /home/runner/work/Teste_QA_SMRK/Teste_QA_SMRK/Projeto_QA_Anelise/
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-   
+        
+    - name: Run test
     - run: bundle exec cucumber
+    
+    - name: Gherkin Linter
+      uses: restqa/gherkin-linter-action@0.0.1
+
